@@ -50,7 +50,7 @@ println(hash_to_hex(hash))
 ## Tests
 
 ```bash
-cd crypto/mb-hash && moon test
+moon test crypto/mb-hash/src/sha2
 ```
 
 ### Test Coverage

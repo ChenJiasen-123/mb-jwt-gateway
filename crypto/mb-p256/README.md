@@ -21,7 +21,7 @@ No reproducible per-operation benchmark is published for this standalone project
 - **Curve security**: P-256 provides ~128-bit security level
 - **Deterministic signatures**: Uses RFC 6979 deterministic k to prevent nonce-reuse attacks
 - **Point validation**: Public keys are validated before use
-- **Signature validation**: Strict ASN.1 DER parsing prevents malformed signature attacks
+- **Signature representation**: ECDSA uses r/s components; JWT ES256 serializes a 64-byte r || s value, not ASN.1 DER
 
 ## API
 
@@ -35,7 +35,7 @@ Handle Result errors and source private keys from a secure random generator. Do 
 ## Tests
 
 ```bash
-cd crypto/mb-p256 && moon test
+moon test crypto/mb-p256/src
 ```
 
 ### Test Coverage

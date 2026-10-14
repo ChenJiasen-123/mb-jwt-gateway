@@ -17,9 +17,9 @@ No reproducible per-operation benchmark is published for this standalone project
 
 ## Security Considerations
 
-- **Key length validation**: Rejects keys longer than block size (64 bytes for SHA-256, 128 bytes for SHA-512)
+- **Key normalization**: Keys longer than the hash block size are hashed before padding.
 - **Block-size padding**: Automatic key padding per RFC 2104
-- **No key leakage**: Keys are never exposed in output or error messages
+- **Key handling**: Callers supply and protect keys; memory erasure is not guaranteed.
 
 ## API
 
@@ -28,36 +28,37 @@ No reproducible per-operation benchmark is published for this standalone project
 | `hmac_sha256(message, key)` | Compute HMAC-SHA256 (Array[UInt] input) |
 | `hmac_sha256_bytes(message, key)` | Compute HMAC-SHA256 (Bytes input) |
 | `hmac_sha256_string(message, key)` | Compute HMAC-SHA256 (String input) |
-| `verify_hmac_sha256(message, key, mac)` | Constant-time HMAC-SHA256 verification |
-| `verify_hmac_sha256_bytes(message, key, mac)` | Constant-time verification (Bytes input) |
+| `verify_hmac_sha256(message, key, mac)` | HMAC-SHA256 verification; runtime timing unverified |
+| `verify_hmac_sha256_bytes(message, key, mac)` | Verification with Bytes input; runtime timing unverified |
 | `hmac_sha512(message, key)` | Compute HMAC-SHA512 (Array[UInt] input) |
 | `hmac_sha512_bytes(message, key)` | Compute HMAC-SHA512 (Bytes input) |
 | `hmac_sha512_string(message, key)` | Compute HMAC-SHA512 (String input) |
-| `verify_hmac_sha512(message, key, mac)` | Constant-time HMAC-SHA512 verification |
-| `verify_hmac_sha512_bytes(message, key, mac)` | Constant-time verification (Bytes input) |
+| `verify_hmac_sha512(message, key, mac)` | HMAC-SHA512 verification; runtime timing unverified |
+| `verify_hmac_sha512_bytes(message, key, mac)` | Verification with Bytes input; runtime timing unverified |
 
 ## Usage
 
-```moonbit
-let key = string_to_uints("secret-key")
-let msg = string_to_uints("hello world")
+The snippet below belongs inside a function in a package importing this module as `@hmac`.
 
-let mac = hmac_sha256(msg, key)
-let ok = verify_hmac_sha256(msg, key, mac)
+```moonbit
+// Import crypto/mb-hmac/src as @hmac in the caller's moon.pkg.
+// This is a synthetic example key, not a key-generation or storage strategy.
+let mac = @hmac.hmac_sha256_string("hello world", "synthetic-demo-key")
+println(mac.length())
 ```
 
 ## Tests
 
 ```bash
-cd crypto/mb-hmac && moon test
+moon test crypto/mb-hmac/src
 ```
 
 ### Test Coverage
 
 - HMAC-SHA256 computation
 - HMAC-SHA512 computation
-- Constant-time verification
-- Key length validation
+- MAC comparison correctness; no timing proof
+- Key normalization
 - Empty message handling
 - Empty key handling
 - RFC 4231 test vectors

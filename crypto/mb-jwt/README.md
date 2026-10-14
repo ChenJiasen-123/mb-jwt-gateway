@@ -43,6 +43,8 @@ No reproducible per-operation benchmark is published for this standalone project
 
 ## Usage
 
+Import `ChenJiasen-123/mb-jwt-gateway/crypto/mb-jwt/src` as `@mb_jwt` in the caller's `moon.pkg`. The snippet below belongs inside a function.
+
 ```moonbit
 let key = @mb_jwt.JwtKey::HS256("your-secret")
 let payload = "{\"sub\":\"user\",\"exp\":2000000000}"
@@ -61,7 +63,7 @@ match @mb_jwt.verify(token, key) {
 ## Tests
 
 ```bash
-cd crypto/mb-jwt && moon test
+moon test crypto/mb-jwt/src
 ```
 
 ### Test Coverage

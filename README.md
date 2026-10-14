@@ -1,5 +1,7 @@
 # mb-jwt-gateway
 
+[Source prerelease v0.1.0](https://github.com/ChenJiasen-123/mb-jwt-gateway/releases/tag/v0.1.0) · [CI](https://github.com/ChenJiasen-123/mb-jwt-gateway/actions)
+
 Experimental MoonBit JWT signing/verification and authentication middleware.
 The project has one purpose: verify an HS256/ES256 token, validate time and
 issuer/audience policy, and expose the authenticated identity to a caller.
@@ -43,7 +45,7 @@ Replace the module prefix `ChenJiasen-123/mb-secure-stream` with
 Suffixes `/crypto/mb-jwt/src` and `/gateway/src` remain the same.
 The old flow-control and Worker features were intentionally not carried into
 this focused project. They remain recoverable from the original repository's
-history and previously published 0.2.0 package.
+[pre-split source history](https://github.com/ChenJiasen-123/mb-secure-stream/tree/bc8fa03c14d32534d4cb3412a6ff996314bf4f97).
 
 Use this GitHub source release until a Mooncakes version is explicitly announced.
 The original mb-secure-stream 0.2.0 release is unchanged.

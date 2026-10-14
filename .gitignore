@@ -1,0 +1,11 @@
+_build/
+target/
+.mooncakes/
+node_modules/
+.wrangler/
+verification/
+*.key
+*.lock
+.env*
+examples/cloudflare-worker/.env*
+examples/cloudflare-worker/.dev.vars*

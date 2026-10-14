@@ -1,0 +1,227 @@
+{
+  "sourceRepository": "https://github.com/ChenJiasen-123/mb-secure-stream",
+  "sourceCommit": "bc8fa03c14d32534d4cb3412a6ff996314bf4f97",
+  "changes": [
+    "module import prefix",
+    "project documentation",
+    "source formatting"
+  ],
+  "files": [
+    {
+      "path": "LICENSE",
+      "sourceSha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "AGENTS.md",
+      "sourceSha256": "8b04acce8cb4af1d79fc7fb05364818f274a0908a4db81ce959f946c7a64b4b7"
+    },
+    {
+      "path": "docs/gateway-api.md",
+      "sourceSha256": "2309dbda4a44f738d95f6fc590230c0c127a4a5a5eb2677a9e0ef545ede9e014"
+    },
+    {
+      "path": "crypto/mb-hash/README.md",
+      "sourceSha256": "13e138d68588eadef9459114a0f7e2ae7033fa788b7048a649ed0deb9b830e0e"
+    },
+    {
+      "path": "crypto/mb-hash/src/sha2/constants.mbt",
+      "sourceSha256": "e80bcc8158b94a9dc7c76c55550a36f77cd257c09f03bb40caa584e4f260dbdd"
+    },
+    {
+      "path": "crypto/mb-hash/src/sha2/moon.pkg",
+      "sourceSha256": "7dac86283b4d9309c5a118cda4583f09d0ae9572f876d80198118fdb23801a6d"
+    },
+    {
+      "path": "crypto/mb-hash/src/sha2/pkg.generated.mbti",
+      "sourceSha256": "8889cc2e73ba3537fd734ef202caa42df58a9b748e2bf52a4cf2c6cd2edeb0c9"
+    },
+    {
+      "path": "crypto/mb-hash/src/sha2/sha256.mbt",
+      "sourceSha256": "7d94fc919419a7aadaaf3934c5919b3a0aacd48e68b344e51d668d61d69f5d7c"
+    },
+    {
+      "path": "crypto/mb-hash/src/sha2/sha256_test.mbt",
+      "sourceSha256": "19433ccad37b632aa0e8f736c2abd7ca8e73981b727b43383fdcdec9fdf6564f"
+    },
+    {
+      "path": "crypto/mb-hash/src/sha2/sha512.mbt",
+      "sourceSha256": "f203c4d46518baab6f6247323ff8b0bf16c078b70c329ff084558510b88d1316"
+    },
+    {
+      "path": "crypto/mb-hash/src/sha2/sha512_test.mbt",
+      "sourceSha256": "caaddfbc53662a3c5e38197d34f5f7c33a46a6d7d646de1d807145420b3f4a7f"
+    },
+    {
+      "path": "crypto/mb-hash/src/sha2/utils.mbt",
+      "sourceSha256": "25e51bf4ee01cffae70a4da4677655bcea4e8975566d64dacb20d96223ce51fe"
+    },
+    {
+      "path": "crypto/mb-hmac/README.md",
+      "sourceSha256": "9e31264e74597c37ad80c91f1a976906b49ec0ca123251530ec0e29932bc5cdd"
+    },
+    {
+      "path": "crypto/mb-hmac/src/hmac.mbt",
+      "sourceSha256": "8dc2d6f9787760030f2578ef479805efd4de9762434516d3909175c2e0fcd9a4"
+    },
+    {
+      "path": "crypto/mb-hmac/src/hmac_test.mbt",
+      "sourceSha256": "b7862738a5a815bd67f7c8835f8765ce9256266bbdcfb79f318e2f51eca6db32"
+    },
+    {
+      "path": "crypto/mb-hmac/src/moon.pkg",
+      "sourceSha256": "dc0fc7c2e507f2e019709e7eb4920a2215d65c32a119b56d2089b1d4f5a68107"
+    },
+    {
+      "path": "crypto/mb-hmac/src/pkg.generated.mbti",
+      "sourceSha256": "65967a947b071481eca4e78980b06bb246f63e0fe0f807b5226c4ad97000b769"
+    },
+    {
+      "path": "crypto/mb-jwt/README.md",
+      "sourceSha256": "c2cea04894d0b9bb3664853f90be7abfe258d57745866a4f8135244aeb700e2d"
+    },
+    {
+      "path": "crypto/mb-jwt/src/base64url.mbt",
+      "sourceSha256": "5ba192c8dbc547541fa426d2609f646a50ba5575cefae3a7ccb72996eb12295d"
+    },
+    {
+      "path": "crypto/mb-jwt/src/jwt.mbt",
+      "sourceSha256": "44fc084299c86c984deb9b95ddbb2ef6693e7ff030115a6200df196c01e1245d"
+    },
+    {
+      "path": "crypto/mb-jwt/src/jwt_bench.mbt",
+      "sourceSha256": "41607a878308dc1e48e0a24d025a80ff4cf434b114b233cd59d656d10270a4f5"
+    },
+    {
+      "path": "crypto/mb-jwt/src/jwt_test.mbt",
+      "sourceSha256": "bbcb322dce177fdad6f3aed5b5694753853435b247eda1a850ba6edd7d3bcfa7"
+    },
+    {
+      "path": "crypto/mb-jwt/src/moon.pkg",
+      "sourceSha256": "dd825fb04c01ca9c6dc6737438108c1c6c0aed629cc88282318c9e59348dd7ef"
+    },
+    {
+      "path": "crypto/mb-jwt/src/pkg.generated.mbti",
+      "sourceSha256": "150acad1cfaffe7634c56510a931d9d62ccf582506eea3c577f358ff26250c44"
+    },
+    {
+      "path": "crypto/mb-jwt/src/types.mbt",
+      "sourceSha256": "0b1ae6bdb62dac64887d493b7a6431a41ad6a57ed5f8766c774abab4f8f8dc5b"
+    },
+    {
+      "path": "crypto/mb-p256/README.md",
+      "sourceSha256": "ab8330bf70a2441c8e25899963b6a563336457fc110ccf05f13a593fed7b62a6"
+    },
+    {
+      "path": "crypto/mb-p256/src/ecdh.mbt",
+      "sourceSha256": "4a0d5d0c87dbbc5f9acdfccf2a37b2c536f397a4cf2f95e9d700e1cc1250ffa8"
+    },
+    {
+      "path": "crypto/mb-p256/src/ecdsa.mbt",
+      "sourceSha256": "bf5483063855f81b7ef5ed5fe4379f39e9b733a8da2579807d816a27f96906a4"
+    },
+    {
+      "path": "crypto/mb-p256/src/field.mbt",
+      "sourceSha256": "60ca3892cdeb8a874c3c97c82c057489f947d21129fb654abb124283de05303c"
+    },
+    {
+      "path": "crypto/mb-p256/src/moon.pkg",
+      "sourceSha256": "424c690e7644d8f1d5a8ec9a20ce81f227509514394ed18ff0e28cc44176915f"
+    },
+    {
+      "path": "crypto/mb-p256/src/p256_test.mbt",
+      "sourceSha256": "d29a6a719fddea4315ac424144811b97ee574b5ed212bb98a86b86691d19c88d"
+    },
+    {
+      "path": "crypto/mb-p256/src/pkg.generated.mbti",
+      "sourceSha256": "c1fdc3d3b0b6bd549d9b5ea3277d76c3b38c2050c3e42a5cb8dc5c901cfb5478"
+    },
+    {
+      "path": "crypto/mb-p256/src/point.mbt",
+      "sourceSha256": "80c6aca05def7be2c7bd1c678429f10acc8cfae16bc80257655a14dc7cf614e5"
+    },
+    {
+      "path": "crypto/mb-p256/src/scalar.mbt",
+      "sourceSha256": "d3a61988468ccfcf65fedcef2d54e3af29db42c06948a652d1a0bdfdfb92e09b"
+    },
+    {
+      "path": "examples/cloudflare-worker/README.md",
+      "sourceSha256": "9a26f7a090a53bce6d6bca9b6e222324d59da79a38836a6fe067b75398b97bcd"
+    },
+    {
+      "path": "examples/cloudflare-worker/package-lock.json",
+      "sourceSha256": "87e8d22ac86268dea3bbb156dd1dde598f4723c989f7e6074d142f5a186bac05"
+    },
+    {
+      "path": "examples/cloudflare-worker/package.json",
+      "sourceSha256": "9f4077b7adaca6529832870050145995ed4d746486da81b9fdb9bdfa335bc239"
+    },
+    {
+      "path": "examples/cloudflare-worker/tsconfig.json",
+      "sourceSha256": "f69d7f3dc38e5b71c959738057a9add33f6766baa141730ce9ef4cb5b3e8f50d"
+    },
+    {
+      "path": "examples/cloudflare-worker/worker.test.mjs",
+      "sourceSha256": "e9d06d5d3313215aaa0073cf66bfa16ea98e979e1df5218d4fbf1ebf27633c36"
+    },
+    {
+      "path": "examples/cloudflare-worker/worker.ts",
+      "sourceSha256": "b6309e084aaeb21cd378b894e19b87b5720a0ca5a668d33a282827611d881cc0"
+    },
+    {
+      "path": "examples/cloudflare-worker/wrangler.toml",
+      "sourceSha256": "92f3e4337a6eb68aa0a541d717437a6797c729f51c2491c3864e41106ee321c2"
+    },
+    {
+      "path": "gateway/README.md",
+      "sourceSha256": "caa829c83763f4742fa8abcdb12d58181f847dc1e8d6b44bbce45986bab8a487"
+    },
+    {
+      "path": "gateway/src/bandwidth.mbt",
+      "sourceSha256": "346d8650971ef52d6c4ca16214ec80e39a24d7e92dc4ece117d6329c1228a43a"
+    },
+    {
+      "path": "gateway/src/context_revalidation_wbtest.mbt",
+      "sourceSha256": "c56f58312daa28013fc46d533d7986f7d2d0a419c9a89825849216435d3096dd"
+    },
+    {
+      "path": "gateway/src/flow_control.mbt",
+      "sourceSha256": "e8df0bdc68cf0ed198b03f2c527caa218766cb1b830c8f327427e713b058d90a"
+    },
+    {
+      "path": "gateway/src/gateway_bench.mbt",
+      "sourceSha256": "a6b64408a2ddbe4a862081a2df743b19824230615d806531b5d0dd11fe6f491b"
+    },
+    {
+      "path": "gateway/src/gateway_wbtest.mbt",
+      "sourceSha256": "bafd5edb74abfe8762b685cbbe86ad9d7aba5294b55e03bfb5b6bc79c74835a1"
+    },
+    {
+      "path": "gateway/src/middleware.mbt",
+      "sourceSha256": "4918734719bc63bc27cff8e8e012bc998a5c31d1312dc707a8e8930b2d4663f7"
+    },
+    {
+      "path": "gateway/src/moon.pkg",
+      "sourceSha256": "44237669b8a5325a07be089122bd8ab8e39762cec203990e38a6809947701dbd"
+    },
+    {
+      "path": "gateway/src/payload.mbt",
+      "sourceSha256": "d133772231b7de9e04087c60f86f2a62b0e12240be0ac18ae910d3af560081dd"
+    },
+    {
+      "path": "gateway/src/pkg.generated.mbti",
+      "sourceSha256": "aa1445ba1c3c80cce57b5eb42f73973245599f3e9aa3f5b93e65b6916e94b8e1"
+    },
+    {
+      "path": "gateway/src/review_regressions_wbtest.mbt",
+      "sourceSha256": "c16e143c9f15e523289181a36ece15b334d8272c2e842ef124fe723b780e9209"
+    },
+    {
+      "path": "gateway/src/stream.mbt",
+      "sourceSha256": "c23fc288a7e42080fcdb524b25f163fa5d034a51a36deb3ffc1cac7c8f655e79"
+    },
+    {
+      "path": "gateway/src/token_bucket_wbtest.mbt",
+      "sourceSha256": "7ad2e5aa76e9003aca62804d159142f387cb2d9176dd1ba724fdfc531a991976"
+    }
+  ]
+}

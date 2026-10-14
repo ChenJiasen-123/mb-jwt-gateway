@@ -7,6 +7,7 @@ Original license: Apache-2.0 (LICENSE retained).
 crypto/mb-hash, crypto/mb-hmac and crypto/mb-p256 derive from
 https://github.com/moonbit-crypto/mb-crypto under Apache-2.0.
 The original source comments and module documentation are retained.
-JWT/gateway additions and the independent Worker example originate in
-mb-secure-stream. Package import prefixes and documentation were adapted
+JWT/authentication middleware additions originate in mb-secure-stream.
+The standalone release omits Worker, flow-control, metrics, replay-cache and
+ECDH features to keep the project focused. Package import prefixes and documentation were adapted
 for this independent project; source formatting may be normalized.

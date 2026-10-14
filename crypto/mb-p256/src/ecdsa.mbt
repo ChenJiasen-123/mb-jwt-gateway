@@ -27,15 +27,6 @@ fn bytes_to_uint_array(bytes : Bytes) -> Array[UInt32] {
 }
 
 ///|
-fn uints_to_bytes(values : Array[UInt32]) -> Bytes {
-  let buf : Array[Byte] = []
-  for value in values {
-    buf.push((value & 0xFFU).to_byte())
-  }
-  Bytes::from_array(buf)
-}
-
-///|
 /// Generate key pair from a 32-byte private key.
 pub fn ecdsa_keygen(
   private_key_bytes : Array[UInt32],

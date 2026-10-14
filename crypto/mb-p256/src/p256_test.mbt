@@ -161,29 +161,3 @@ test "ecdsa rejects tampered message" {
     }
   }
 }
-
-///|
-/// Test ECDH key exchange.
-test "ecdh key exchange" {
-  let alice_priv = hex_to_uints(
-    "c9afa9d845ba75166b5c215767b1d6934e50c3db36e89b127b8a622b120f6721",
-  )
-  let bob_priv = hex_to_uints(
-    "0000000000000000000000000000000000000000000000000000000000000002",
-  )
-  match (@src.derive_public_key(alice_priv), @src.derive_public_key(bob_priv)) {
-    (Ok(alice_pub), Ok(bob_pub)) =>
-      match (@src.ecdh(alice_priv, bob_pub), @src.ecdh(bob_priv, alice_pub)) {
-        (Ok(shared1), Ok(shared2)) => {
-          // Both parties should derive the same shared secret
-          assert_eq(shared1.length(), 32)
-          assert_eq(shared2.length(), 32)
-          for i in 0..<32 {
-            assert_eq(shared1[i], shared2[i])
-          }
-        }
-        _ => assert_true(false)
-      }
-    _ => assert_true(false)
-  }
-}

@@ -4,10 +4,6 @@ package "ChenJiasen-123/mb-jwt-gateway/crypto/mb-p256/src"
 // Values
 pub fn derive_public_key(Array[UInt]) -> Result[Array[UInt], String]
 
-pub fn ecdh(Array[UInt], Array[UInt]) -> Result[Array[UInt], String]
-
-pub fn ecdh_bytes(Bytes, Bytes) -> Result[Bytes, String]
-
 pub fn ecdsa_keygen(Array[UInt]) -> Result[ECDSAKeyPair, String]
 
 pub fn ecdsa_keygen_bytes(Bytes) -> Result[ECDSAKeyPair, String]

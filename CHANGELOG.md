@@ -2,7 +2,8 @@
 
 ## 0.1.0
 
-- Extract existing MoonBit JWT/gateway components and their supporting modules.
-- Preserve the independent TypeScript Worker and its locked build/test setup.
-- Add standalone project checks, source provenance and migration instructions.
-- No cloud deployment, registry publication or security audit is implied.
+- Extract JWT verification/signing and issuer/audience-aware authentication middleware.
+- Retain supporting SHA-2/HMAC/P-256 ECDSA modules and relevant regression tests.
+- Exclude Worker, flow control, metrics, replay cache and unused ECDH support.
+- Preserve provenance, licenses and migration information.
+- Source release only; no cloud deployment, registry publication or audit claim.

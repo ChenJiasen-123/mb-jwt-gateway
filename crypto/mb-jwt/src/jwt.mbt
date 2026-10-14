@@ -5,7 +5,7 @@
 // SECURITY FEATURES:
 // - Rejects "alg:none" to prevent signature bypass attacks (CVE-2016-5431)
 // - JwtKey enum prevents algorithm/key-type confusion at compile time
-// - Constant-time signature comparison prevents timing attacks
+// - Signature comparison avoids source-level early exit; runtime timing is not guaranteed
 // - verify() dispatches to correct algorithm based on key variant
 
 ///|

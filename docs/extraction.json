@@ -4,7 +4,8 @@
   "changes": [
     "module import prefix",
     "project documentation",
-    "source formatting"
+    "source formatting",
+    "removed unrelated features and retained their original history"
   ],
   "files": [
     {
@@ -223,5 +224,21 @@
       "path": "gateway/src/token_bucket_wbtest.mbt",
       "sourceSha256": "7ad2e5aa76e9003aca62804d159142f387cb2d9176dd1ba724fdfc531a991976"
     }
+  ],
+  "removedAfterExtraction": [
+    "crypto/mb-jwt/src/jwt_bench.mbt",
+    "crypto/mb-p256/src/ecdh.mbt",
+    "examples/cloudflare-worker/README.md",
+    "examples/cloudflare-worker/package-lock.json",
+    "examples/cloudflare-worker/package.json",
+    "examples/cloudflare-worker/tsconfig.json",
+    "examples/cloudflare-worker/worker.test.mjs",
+    "examples/cloudflare-worker/worker.ts",
+    "examples/cloudflare-worker/wrangler.toml",
+    "gateway/src/bandwidth.mbt",
+    "gateway/src/flow_control.mbt",
+    "gateway/src/gateway_bench.mbt",
+    "gateway/src/stream.mbt",
+    "gateway/src/token_bucket_wbtest.mbt"
   ]
 }

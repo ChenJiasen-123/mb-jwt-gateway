@@ -17,15 +17,3 @@ jobs:
           moon test --target native
           moon info
           moon fmt --check gateway/src crypto/mb-jwt/src crypto/mb-p256/src crypto/mb-hmac/src crypto/mb-hash/src/sha2
-      - uses: actions/setup-node@v4
-        with:
-          node-version: '24'
-      - name: Worker checks (no deployment)
-        working-directory: examples/cloudflare-worker
-        env:
-          WRANGLER_SEND_METRICS: 'false'
-        run: |
-          npm ci --ignore-scripts
-          npm test
-          npm run check
-          npm run build

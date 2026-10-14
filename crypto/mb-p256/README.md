@@ -29,7 +29,6 @@ No reproducible per-operation benchmark is published for this standalone project
 - `ecdsa_keygen(private_key)` and `ecdsa_keygen_bytes(private_key)` derive a key pair from caller-supplied private key material; they do not generate random keys.
 - `ecdsa_sign_message(private_key, message)` and `ecdsa_verify_message(public_key, message, signature)` operate on messages.
 - `ecdsa_sign` / `ecdsa_verify` operate on hashes; consult `src/pkg.generated.mbti` for exact types and Bytes variants.
-- `ecdh` / `ecdh_bytes` provide shared-secret derivation.
 
 Handle Result errors and source private keys from a secure random generator. Do not treat these primitives as an audited protocol implementation.
 

@@ -14,6 +14,3 @@ JWT `verify` checks signatures and returns payload JSON; claims validation is
 separate unless using the middleware. `decode` and `decode_header` provide
 unauthenticated data only. The legacy filter omits issuer/audience constraints.
 Exact signatures are in generated `.mbti` files and the [JWT guide](../crypto/mb-jwt/README.md).
-
-Replay prevention, revocation, trusted clock, key rotation/storage, HTTP header
-sanitization and request authorization are outside this library.

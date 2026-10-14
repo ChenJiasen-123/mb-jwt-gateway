@@ -2,27 +2,11 @@
 
 JWT (JSON Web Tokens) for MoonBit — HS256 and ES256 signing/verification.
 
-## Status
-
-Experimental implementation. Tests cover selected behavior and vectors; they do not establish production readiness or side-channel resistance.
-
 ## Reference standards
 
 - **RFC 7519** — JSON Web Tokens (JWT)
 - **RFC 7515** — JSON Web Signature (JWS)
 - **RFC 7518** — JSON Web Algorithms (JWA)
-
-## Performance
-
-No reproducible per-operation benchmark is published for this standalone project.
-
-## Security Considerations
-
-`verify` checks the signature and returns the payload; applications must separately validate claims and authorization policy. `decode` and `decode_header` do not authenticate their outputs. Use a strong randomly generated HS256 secret; the short strings below are demonstration placeholders.
-
-- **Algorithm confusion prevention**: Strict algorithm matching prevents HS256/ES256 confusion attacks
-- **alg:none rejection**: Blocks CVE-2016-5431 and variants (case-insensitive, whitespace-tolerant)
-- **Signature strip detection**: Rejects tokens with missing or empty signatures
 
 ## API
 
@@ -77,7 +61,7 @@ moon test crypto/mb-jwt/src
 - Truncated token rejection
 - Payload tampering detection
 - Header injection prevention
-- Empty or invalid key handling (not a guarantee against weak secrets)
+- Empty or invalid key handling
 - Cross-token signature reuse prevention
 - Expired token rejection
 - Not-before (nbf) enforcement

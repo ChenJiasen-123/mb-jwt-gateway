@@ -14,5 +14,3 @@ issuer or audience. Prefer the policy entry point for shared keys.
 `parse_gateway_claims` parses data; it does not authenticate a token.
 
 See [usage](../docs/gateway-api.md) and `src/pkg.generated.mbti` for types.
-JWT verification is experimental and unaudited. There is no replay cache,
-revocation, rate limiting, HTTP forwarding or guaranteed constant-time execution.

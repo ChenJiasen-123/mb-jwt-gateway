@@ -5,7 +5,7 @@
 Experimental MoonBit JWT signing/verification and authentication middleware.
 The project has one purpose: verify an HS256/ES256 token, validate time and
 issuer/audience policy, and expose the authenticated identity to a caller.
-It is a library, not a running HTTP gateway or hosted service.
+It provides reusable library packages.
 
 ## Scope
 
@@ -13,12 +13,6 @@ It is a library, not a running HTTP gateway or hosted service.
 - [Authentication middleware](gateway/README.md): subject, role, expiry,
   not-before and explicit issuer/audience policy; clears identity on failure.
 - Supporting SHA-2, HMAC and P-256 ECDSA implementation, with original provenance.
-
-No Worker, rate limiter, scheduler, connection pool, bandwidth shaper,
-circuit breaker, replay cache, ECDH or stream encryption is included.
-Replay prevention, revocation, key storage and request authorization are the
-application's responsibility. This is unaudited experimental software with
-no constant-time or production-readiness guarantee.
 
 ## Build and verify
 
